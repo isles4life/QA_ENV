@@ -1,4 +1,9 @@
 QAENV::Application.routes.draw do
+  get 'help' => 'pages#help'
+  get 'environments' => 'pages#environments'
+
+  root :to => 'pages#home'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
